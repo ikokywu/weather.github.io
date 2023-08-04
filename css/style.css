@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+   background-color:rgb(47, 56, 56);
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.card {
+   width: 90%;
+   max-width: 470px;
+   padding: 40px;
+   border-radius: 15px;
+   background-image: linear-gradient( 60.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );
+}
+
+.card .search {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.search input {
+   border: none;
+   outline: none;
+   padding: 15px;
+   height: 50px;
+   border-radius: 30px;
+   flex: 1;
+}
+
+.search button {
+   border: none;
+   outline: none;
+   width: 50px;
+   height: 50px;
+   margin-left: 5px;
+   border-radius: 50%;
+}
+
+.search button img {
+   width: 16px;
+}
+
+.error {
+   margin-top: 10px;
+   display: none;
+}
+
+.error p {
+   color: aliceblue;
+}
+
+.weather {
+   color: aliceblue;
+   text-align: center;
+   display: none;
+}
+
+.weather .temperature {
+   font-size: 4rem;
+}
+
+.details {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 70px;
+}
+
+.details .col {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.col img {
+   margin-top: 5px;
+   width: 40px;
+}
+
+.col .detail {
+   text-align: left;
+   margin-left: 10px;
+}
+
+.detail .humidity, .wind {
+   font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+   .card {
+      padding: 40px 3cqb;
+   }
+
+  .col img {
+   width: 30px;
+  }
+
+  .col .detail {
+   margin-left: 5px;
+  }
+
+  .detail .humidity, .wind {
+   font-size: 25px;
+  }
+}
