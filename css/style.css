@@ -33,7 +33,7 @@ body {
    border: none;
    outline: none;
    padding: 15px;
-   height: 50px;
+   min-width: 100px;
    border-radius: 30px;
    flex: 1;
 }
